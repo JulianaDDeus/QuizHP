@@ -43,11 +43,12 @@ function MostrarPergunta(num) {
     container.innerHTML = "";
 
     var pergunta = document.createElement("h3");
-    pergunta.style = "text-align: center"
+    pergunta.class = "card-title"
     pergunta.innerHTML = perguntas[num];
     container.appendChild(pergunta);
 
     var Lista = document.createElement("ul");
+    Lista.class = "card-text"
     Lista.id = "alt";
 
     for (let i = 0; i < alternativas[num].length; i++) {
