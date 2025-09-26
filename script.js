@@ -85,19 +85,24 @@ function Analisar(resposta, num){
 }
 let titulo = document.getElementById("titulo");
 let texto = document.getElementById("resultado");
+let img = document.getElementById("img")
 function Respostas(acertos){
     if(acertos <= 3){
         titulo.innerHTML = "Só " + acertos + "/10?";
-        texto.innerHTML = "Alguém não prestou muita atenção nos filmes, não é mesmo? 😂 Mas tudo bem, mais sorte na próxima!"
+        texto.innerHTML = "Alguém não prestou muita atenção nos filmes, não é mesmo? 😂 Mas tudo bem, mais sorte na próxima!";
+        img.src = "./img/result1.jpg";
     }else if(acertos > 3 && acertos <= 6){
         titulo.innerHTML = "" + acertos + "/10";
         texto.innerHTML = "Foi bom, mas poderia ser melhor. Me parece uma boa desculpa para reassitir os filmes 👀"
+        img.src = "./img/result2.jpg"
     }else if(acertos > 6 && acertos <= 9){
         titulo.innerHTML = "" + acertos + "/10!";
-        texto.innerHTML = "Você foi muito bem! Quase acertou todas!😁"
+        texto.innerHTML = "Você foi muito bem! Quase acertou todas!😁";
+        img.src = "./img/result3.jpg"
     }else{
         titulo.innerHTML = "Wow!" + acertos + "/10!!!🎉";
-        texto.innerHTML = "Parabéns, você gabaritou o nosso teste! Você sabe muito sobre o universo Haary Potter!"
+        texto.innerHTML = "Parabéns, você gabaritou o nosso teste! Você sabe muito sobre o universo Haary Potter!";
+        img.src = "./img/result4.jpg"
     }
     modal = new bootstrap.Modal(document.getElementById('resposta'));
     modal.show();

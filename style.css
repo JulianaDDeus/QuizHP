@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(7, 7, 85);
+    background-image: url(./img/castle-of-hogwarts.jpg);
+}
+header{
+    background-color: rgb(7, 7, 85);
+    color: aliceblue;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+ul{
+    list-style: none;
+}
+#botao{
+    background-color: rgb(7, 7, 85);
+    color:aliceblue;
+}
+img{
+    width: 250px;
+}
