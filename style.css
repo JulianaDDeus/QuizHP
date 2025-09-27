@@ -5,15 +5,25 @@ body{
 header{
     background-color: rgb(7, 7, 85);
     color: aliceblue;
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 20px;
+}
+#icone{
+    width: 100px;
 }
 ul{
     list-style: none;
 }
 #botao{
     background-color: rgb(7, 7, 85);
+    border: none;
     color:aliceblue;
+}
+#botao:hover{
+    background-color: rgb(21, 21, 136);
+}
+#card{
+    margin: 50px
 }
 img{
     width: 250px;

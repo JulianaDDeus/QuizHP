@@ -57,7 +57,7 @@ function MostrarPergunta(num) {
 
         var botao = document.createElement("button");
         botao.classList.add("btn", "btn-primary", "btn-block");
-        botao.id = alternativas[num][i]
+        botao.id = "botao";
         botao.type = "button";
         botao.onclick = function() {
             Analisar(alternativas[num][i], num);
